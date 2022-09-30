@@ -234,7 +234,7 @@ nav .desktop-menu #contact {
   .gallery {
     display: -ms-grid;
     display: grid;
-    height: 370px;
+    height: 340px;
     width: 100vw;
     -ms-grid-columns: 50vw 50vw;
         grid-template-columns: 50vw 50vw;
@@ -256,6 +256,34 @@ nav .desktop-menu #contact {
   }
   .gallery #sugar-cubes {
     content: url("images/mobile/image-gallery-sugar-cubes.jpg");
+  }
+  footer {
+    height: 200px;
+    background-color: #9ed1c5;
+    color: #458c7e;
+    text-align: center;
+    padding: 75px 15px;
+  }
+  footer .footer-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 25px;
+  }
+  footer .footer-links .footer-link {
+    font-size: 1.3rem;
+  }
+  footer .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 75px 45px;
   }
 }
 

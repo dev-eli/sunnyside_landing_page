@@ -229,7 +229,7 @@ body::-webkit-scrollbar {
 
     .gallery {
         display: grid;
-        height: 370px;
+        height: 340px;
         width: 100vw;
         grid-template-columns: 50vw 50vw;;
         margin-top: 90px;
@@ -250,6 +250,30 @@ body::-webkit-scrollbar {
         }
         #sugar-cubes {
             content: url('images/mobile/image-gallery-sugar-cubes.jpg');
+        }
+    }
+
+    footer {
+        height: 200px;
+        background-color: #9ed1c5;
+        color: hsl(168, 34%, 41%);
+        text-align: center;
+        padding: 75px 15px;
+
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            margin: 25px;
+
+            .footer-link {
+                font-size: 1.3rem;;
+            }
+        }
+
+        .socials {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 75px 45px;
         }
     }
 
