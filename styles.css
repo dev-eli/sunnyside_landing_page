@@ -194,6 +194,43 @@ nav .desktop-menu #contact {
     background: url("images/mobile/image-photography.jpg") center/100%;
     color: #19536b;
   }
+  .testimonials {
+    text-align: center;
+  }
+  .testimonials h3 {
+    padding: 40px 20px;
+    letter-spacing: 4px;
+    font-family: "Fraunces";
+    color: #a7abae;
+  }
+  .testimonials .testimonials-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonials .testimonials-container .testimonial-card img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 50px 40px 30px 40px;
+  }
+  .testimonials .testimonials-container .testimonial-card .review {
+    margin: 20px;
+    font-family: "Barlow";
+    color: #818498;
+  }
+  .testimonials .testimonials-container .testimonial-card .name {
+    font-family: "Fraunces";
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+  .testimonials .testimonials-container .testimonial-card .title {
+    color: #a7abae;
+  }
 }
 
 @media screen and (min-width: 451px) {

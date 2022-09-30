@@ -186,6 +186,46 @@ body::-webkit-scrollbar {
             color: hsl(198, 62%, 26%);
         }
     }
+    
+
+    .testimonials {
+        text-align: center;
+        h3 {
+            padding: 40px 20px;
+            letter-spacing: 4px;;
+            font-family: "Fraunces";
+            color:  hsl(210, 4%, 67%);
+        }
+        .testimonials-container {
+            display: flex;
+            flex-direction: column;
+
+            .testimonial-card {
+                img {
+                    border-radius: 50%;
+                    height:100px;
+                    width: 100px;
+                    margin: 50px 40px 30px 40px;
+                }
+
+                .review {
+                    margin: 20px;
+                    font-family: "Barlow";
+                    color: hsl(232, 10%, 55%);
+                }
+
+                .name {
+                    font-family: "Fraunces";
+                    padding: 10px;
+                    font-size: 1.1rem;
+                }
+
+                .title {
+                    color: hsl(210, 4%, 67%);
+                }
+            }
+        }
+    }
 
 }
 @media screen and (min-width: 451px) {
