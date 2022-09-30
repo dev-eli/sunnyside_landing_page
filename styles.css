@@ -115,7 +115,7 @@ nav .desktop-menu #contact {
   padding-bottom: 10vh;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 760px) {
   header {
     display: block;
     background: url("images/mobile/image-header.jpg") no-repeat center/100%;
@@ -234,7 +234,7 @@ nav .desktop-menu #contact {
   .gallery {
     display: -ms-grid;
     display: grid;
-    height: 340px;
+    height: 90vw;
     width: 100vw;
     -ms-grid-columns: 50vw 50vw;
         grid-template-columns: 50vw 50vw;
@@ -287,22 +287,25 @@ nav .desktop-menu #contact {
   }
 }
 
-@media screen and (min-width: 451px) {
+@media screen and (min-width: 751px) {
   header {
-    background: url("images/mobile/image-header.jpg") no-repeat center/100%;
+    background: url("images/desktop/image-header.jpg") no-repeat 0 0/100%;
     width: 100vw;
-    height: 100vh;
+    height: 55vw;
   }
   header .desktop-menu {
-    display: none;
+    display: block;
   }
   header .hamburger {
-    margin: 0px 15px;
+    display: none;
+  }
+  .landing {
+    font-size: 3rem;
   }
   .info .info-img-wrapper {
     display: block;
     width: 100vw;
-    height: 450px;
+    height: 300px;
   }
   .info #transform-img-wrapper {
     background: url("images/mobile/image-transform.jpg") no-repeat center/100%;
@@ -342,24 +345,116 @@ nav .desktop-menu #contact {
   .info .category {
     display: block;
     width: 100vw;
-    height: 1200px;
+    height: 200px;
+    text-align: center;
+    padding-top: 400px;
+    font-family: 'Fraunces';
+  }
+  .info .category h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  .info .category p {
+    margin: 25px;
   }
   .info .graphic-design {
     background: url("images/mobile/image-graphic-design.jpg") center/100%;
+    color: #25564b;
   }
-}
-
-@media screen and (min-width: 901px) {
-  header {
-    background: url("images/desktop/image-header.jpg") no-repeat 0 0/100%;
+  .info .photography {
+    background: url("images/mobile/image-photography.jpg") center/100%;
+    color: #19536b;
+  }
+  .testimonials {
+    text-align: center;
+  }
+  .testimonials h3 {
+    padding: 40px 20px;
+    letter-spacing: 4px;
+    font-family: "Fraunces";
+    color: #a7abae;
+  }
+  .testimonials .testimonials-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonials .testimonials-container .testimonial-card img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 50px 40px 30px 40px;
+  }
+  .testimonials .testimonials-container .testimonial-card .review {
+    margin: 20px;
+    font-family: "Barlow";
+    color: #818498;
+  }
+  .testimonials .testimonials-container .testimonial-card .name {
+    font-family: "Fraunces";
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+  .testimonials .testimonials-container .testimonial-card .title {
+    color: #a7abae;
+  }
+  .gallery {
+    display: -ms-grid;
+    display: grid;
+    height: 90vw;
     width: 100vw;
-    height: 55vw;
+    -ms-grid-columns: 50vw 50vw;
+        grid-template-columns: 50vw 50vw;
+    margin-top: 90px;
+    margin-bottom: 30px;
   }
-  header .desktop-menu {
-    display: block;
+  .gallery .gallery-image {
+    width: 100%;
   }
-  header .hamburger {
-    display: none;
+  .gallery #milkbottles {
+    content: url("images/mobile/image-gallery-milkbottles.jpg");
+    height: 50vw;
+  }
+  .gallery #orange {
+    content: url("images/mobile/image-gallery-orange.jpg");
+  }
+  .gallery #cone {
+    content: url("images/mobile/image-gallery-cone.jpg");
+  }
+  .gallery #sugar-cubes {
+    content: url("images/mobile/image-gallery-sugar-cubes.jpg");
+  }
+  footer {
+    height: 200px;
+    background-color: #9ed1c5;
+    color: #458c7e;
+    text-align: center;
+    padding: 75px 15px;
+  }
+  footer .footer-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 25px;
+  }
+  footer .footer-links .footer-link {
+    font-size: 1.3rem;
+  }
+  footer .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 75px 45px;
   }
 }
 
