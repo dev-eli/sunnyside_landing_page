@@ -174,7 +174,25 @@ nav .desktop-menu #contact {
   .info .category {
     display: block;
     width: 100vw;
-    height: 450px;
+    height: 200px;
+    text-align: center;
+    padding-top: 400px;
+    font-family: 'Fraunces';
+  }
+  .info .category h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  .info .category p {
+    margin: 25px;
+  }
+  .info .graphic-design {
+    background: url("images/mobile/image-graphic-design.jpg") center/100%;
+    color: #25564b;
+  }
+  .info .photography {
+    background: url("images/mobile/image-photography.jpg") center/100%;
+    color: #19536b;
   }
 }
 
@@ -233,7 +251,10 @@ nav .desktop-menu #contact {
   .info .category {
     display: block;
     width: 100vw;
-    height: 450px;
+    height: 1200px;
+  }
+  .info .graphic-design {
+    background: url("images/mobile/image-graphic-design.jpg") center/100%;
   }
 }
 
@@ -242,6 +263,9 @@ nav .desktop-menu #contact {
     background: url("images/desktop/image-header.jpg") no-repeat 0 0/100%;
     width: 100vw;
     height: 55vw;
+  }
+  header .desktop-menu {
+    display: block;
   }
   header .hamburger {
     display: none;

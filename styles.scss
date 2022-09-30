@@ -111,7 +111,7 @@ body::-webkit-scrollbar {
         height: 540px;
 
         .desktop-menu {
-            display: none;
+           display: none;
         }
         .hamburger {
             margin: 0px 15px;
@@ -162,7 +162,28 @@ body::-webkit-scrollbar {
         .category {
             display: block;
             width: 100vw;
-            height: 450px;;
+            height: 200px;
+            text-align: center;
+            padding-top: 400px;
+            font-family: 'Fraunces';
+
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 25px;;
+            }
+
+            p {
+                margin: 25px;
+            }
+        }
+        .graphic-design {
+            background: url('images/mobile/image-graphic-design.jpg') center/100%;
+            color: hsl(167, 40%, 24%);
+
+        }
+        .photography {
+            background: url('images/mobile/image-photography.jpg') center/100%;
+            color: hsl(198, 62%, 26%);
         }
     }
 
@@ -174,7 +195,7 @@ body::-webkit-scrollbar {
         height: 100vh;
 
         .desktop-menu {
-            display: none;
+           display: none;
         }
         .hamburger {
             margin: 0px 15px;
@@ -221,7 +242,10 @@ body::-webkit-scrollbar {
         .category {
             display: block;
             width: 100vw;
-            height: 450px;;
+            height: 1200px;
+        }
+        .graphic-design {
+            background: url('images/mobile/image-graphic-design.jpg') center/100%;
         }
     }
 
@@ -234,6 +258,9 @@ body::-webkit-scrollbar {
         width: 100vw;
         height: 55vw;
 
+        .desktop-menu {
+            display: block;
+        }
         .hamburger {
             display: none;
         }
