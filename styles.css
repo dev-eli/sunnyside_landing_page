@@ -115,7 +115,7 @@ nav .desktop-menu #contact {
   padding-bottom: 10vh;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 750px) {
   header {
     display: block;
     background: url("images/mobile/image-header.jpg") no-repeat center/100%;
@@ -302,16 +302,51 @@ nav .desktop-menu #contact {
   .landing {
     font-size: 3rem;
   }
+  .info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50vw 50vw;
+        grid-template-columns: 50vw 50vw;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "transform-info transform-img" "standout-img standout-info" "graphic-design photography";
+  }
+  .info #transform {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: transform-info;
+  }
+  .info #standout {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: standout-info;
+  }
   .info .info-img-wrapper {
     display: block;
-    width: 100vw;
-    height: 300px;
+    width: 50vw;
+    height: 310px;
   }
   .info #transform-img-wrapper {
-    background: url("images/mobile/image-transform.jpg") no-repeat center/100%;
+    background: url("images/desktop/image-transform.jpg") no-repeat center/100%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: transform-img;
   }
   .info #standout-img-wrapper {
-    background: url("images/mobile/image-stand-out.jpg") no-repeat center/100%;
+    background: url("images/desktop/image-stand-out.jpg") no-repeat center/100%;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: standout-img;
+  }
+  .info #graphic-design {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: graphic-design;
+  }
+  .info #photography {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: photography;
   }
   .info .learn {
     display: -webkit-box;
@@ -330,39 +365,42 @@ nav .desktop-menu #contact {
   .info .learn h2 {
     font-family: "Fraunces";
     font-size: 28px;
-    padding: 50px;
+    padding: 10px;
   }
   .info .learn p {
     font-family: "Barlow";
     font-size: 18px;
     line-height: 28px;
-    padding: 30px;
+    padding: 0px;
   }
   .info .learn .learn-more {
     font-family: "Fraunces";
-    padding: 30px;
+    padding-top: 20px;
+    font-size: .9rem;
+    text-align: center;
   }
   .info .category {
     display: block;
-    width: 100vw;
-    height: 200px;
+    width: 50vw;
+    height: 300px;
     text-align: center;
-    padding-top: 400px;
+    padding-top: 0px;
     font-family: 'Fraunces';
   }
   .info .category h3 {
     font-size: 2rem;
     margin-bottom: 25px;
+    margin-top: 170px;
   }
   .info .category p {
-    margin: 25px;
+    margin: 15px 25px;
   }
   .info .graphic-design {
-    background: url("images/mobile/image-graphic-design.jpg") center/100%;
+    background: url("images/desktop/image-graphic-design.jpg") center/100%;
     color: #25564b;
   }
   .info .photography {
-    background: url("images/mobile/image-photography.jpg") center/100%;
+    background: url("images/desktop/image-photography.jpg") center/100%;
     color: #19536b;
   }
   .testimonials {
@@ -378,10 +416,11 @@ nav .desktop-menu #contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 10vw;
   }
   .testimonials .testimonials-container .testimonial-card img {
     border-radius: 50%;
@@ -390,7 +429,7 @@ nav .desktop-menu #contact {
     margin: 50px 40px 30px 40px;
   }
   .testimonials .testimonials-container .testimonial-card .review {
-    margin: 20px;
+    margin: 20px 100px;
     font-family: "Barlow";
     color: #818498;
   }
@@ -405,35 +444,32 @@ nav .desktop-menu #contact {
   .gallery {
     display: -ms-grid;
     display: grid;
-    height: 90vw;
     width: 100vw;
-    -ms-grid-columns: 50vw 50vw;
-        grid-template-columns: 50vw 50vw;
+    -ms-grid-columns: 25vw 25vw 25vw 25vw;
+        grid-template-columns: 25vw 25vw 25vw 25vw;
     margin-top: 90px;
-    margin-bottom: 30px;
   }
   .gallery .gallery-image {
     width: 100%;
   }
   .gallery #milkbottles {
-    content: url("images/mobile/image-gallery-milkbottles.jpg");
-    height: 50vw;
+    content: url("images/desktop/image-gallery-milkbottles.jpg");
   }
   .gallery #orange {
-    content: url("images/mobile/image-gallery-orange.jpg");
+    content: url("images/desktop/image-gallery-orange.jpg");
   }
   .gallery #cone {
-    content: url("images/mobile/image-gallery-cone.jpg");
+    content: url("images/desktop/image-gallery-cone.jpg");
   }
   .gallery #sugar-cubes {
-    content: url("images/mobile/image-gallery-sugar-cubes.jpg");
+    content: url("images/desktop/image-gallery-sugarcubes.jpg");
   }
   footer {
     height: 200px;
     background-color: #9ed1c5;
     color: #458c7e;
     text-align: center;
-    padding: 75px 15px;
+    padding: 100px 15px;
   }
   footer .footer-links {
     display: -webkit-box;
@@ -442,7 +478,7 @@ nav .desktop-menu #contact {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 25px;
+    margin: 25px 25vw;
   }
   footer .footer-links .footer-link {
     font-size: 1.3rem;
@@ -454,7 +490,24 @@ nav .desktop-menu #contact {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    margin: 75px 45px;
+    margin: 75px 25vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .info .learn p {
+    margin: 15px;
+  }
+  .info .learn-more {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding: 40px;
+  }
+  .info .category {
+    height: 400px;
+  }
+  .info .category h3 {
+    margin-top: 240px;
   }
 }
 
