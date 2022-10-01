@@ -107,6 +107,18 @@ nav .desktop-menu #contact:hover {
   color: white;
 }
 
+#transform a:hover {
+  -webkit-text-decoration: underline #fad400 solid;
+          text-decoration: underline #fad400 solid;
+  text-decoration-thickness: 3px;
+}
+
+#standout a:hover {
+  -webkit-text-decoration: underline #fe7867 solid;
+          text-decoration: underline #fe7867 solid;
+  text-decoration-thickness: 3px;
+}
+
 .landing {
   text-align: center;
   color: white;

@@ -96,6 +96,19 @@ body::-webkit-scrollbar {
       }
   }
 
+  #transform {
+      a:hover {
+        text-decoration: underline hsl(51, 100%, 49%) solid ;
+        text-decoration-thickness: 3px;
+    }
+  }
+
+  #standout {
+    a:hover {
+      text-decoration: underline hsl(7, 99%, 70%) solid ;
+      text-decoration-thickness: 3px;
+    }
+  }
   .landing {
         text-align: center;
         color: white;
