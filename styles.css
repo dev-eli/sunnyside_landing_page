@@ -102,6 +102,11 @@ nav .desktop-menu #contact {
   font-family: "Fraunces";
 }
 
+nav .desktop-menu #contact:hover {
+  background-color: #82cffa;
+  color: white;
+}
+
 .landing {
   text-align: center;
   color: white;
