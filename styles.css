@@ -26,7 +26,7 @@ nav .desktop-menu .link {
   font-weight: 600;
 }
 
-nav .desktop-menu #contact {
+nav .desktop-menu .contact {
   background-color: #fff;
   color: black;
   padding: 10px 20px;
@@ -35,13 +35,12 @@ nav .desktop-menu #contact {
   font-family: "Fraunces";
 }
 
-nav .desktop-menu #contact:hover {
+nav .desktop-menu .contact:hover {
   background-color: #82cffa;
   color: white;
 }
 
 nav .hamburger {
-  margin-top: -15px;
   display: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -110,7 +109,66 @@ footer .social:hover {
   }
   header .hamburger {
     display: block;
-    margin: 0px 15px;
+    margin: -5px 15px 0px 15px;
+  }
+  header .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  header .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  header .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  header .mobile-menu {
+    opacity: 0;
+    position: absolute;
+    right: 5vw;
+    top: 100px;
+    margin: 0 auto;
+    width: 90%;
+    height: 50vh;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    -webkit-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out;
+  }
+  header .mobile-menu ul {
+    padding: 10vh 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+  }
+  header .mobile-menu ul li {
+    margin: 15px;
+  }
+  header .mobile-menu .link {
+    font-size: 1.5rem;
+    color: #5a636c;
+    margin: 45px;
+    text-align: center;
+  }
+  header .mobile-menu .contact {
+    font-size: 1.2rem;
+    background-color: gold;
+    padding: 5px 15px;
+    border-radius: 15px;
+    color: black;
+    text-align: center;
+  }
+  header .mobile-menu.active {
+    opacity: 100%;
   }
   .landing {
     font-size: 2rem;
