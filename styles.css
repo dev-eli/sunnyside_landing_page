@@ -412,7 +412,7 @@ nav .desktop-menu #contact:hover {
     margin-top: 170px;
   }
   .info .category p {
-    margin: 15px 25px;
+    margin: 15px 10vw;
   }
   .info .graphic-design {
     background: url("images/desktop/image-graphic-design.jpg") center/100%;
@@ -559,5 +559,14 @@ nav .desktop-menu #contact:hover {
   .info .category h3 {
     margin-top: 350px;
   }
+}
+
+footer .footer-links .footer-link:hover {
+  color: white;
+}
+
+footer .social:hover {
+  color: white;
+  fill: white;
 }
 /*# sourceMappingURL=styles.css.map */
