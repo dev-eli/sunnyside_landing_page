@@ -1,3 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   -webkit-text-emphasis: none;
@@ -40,6 +47,21 @@ nav .desktop-menu #contact:hover {
   color: white;
 }
 
+nav .hamburger {
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+nav .hamburger .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  background-color: #fff;
+  color: white;
+}
+
 #transform a:hover {
   -webkit-text-decoration: underline #fad400 solid;
           text-decoration: underline #fad400 solid;
@@ -77,12 +99,10 @@ footer .footer-links .footer-link:hover {
 
 footer .social {
   color: #2C7566;
-  fill: white;
 }
 
 footer .social:hover {
   color: white;
-  fill: white;
 }
 
 @media screen and (max-width: 750px) {
@@ -96,7 +116,27 @@ footer .social:hover {
     display: none;
   }
   header .hamburger {
-    margin: 0px 15px;
+    cursor: pointer;
+  }
+  header .hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
+    color: white;
+  }
+  header .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  header .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  header .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
   }
   .landing {
     font-size: 3rem;
@@ -365,7 +405,7 @@ footer .social:hover {
     margin-top: 170px;
   }
   .info .category p {
-    margin: 15px 10vw;
+    margin: 15px 5vw;
   }
   .info .graphic-design {
     background: url("images/desktop/image-graphic-design.jpg") center/100%;

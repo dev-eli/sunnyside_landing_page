@@ -1,65 +1,85 @@
-  a {
-      text-decoration: none;
-      text-emphasis: none;
-      color: inherit
-  }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    text-emphasis: none;
+    color: inherit
+}
 
 
-  nav {
-      display: flex;
-      justify-content: space-between;
-      padding: 25px 15px;
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 15px;
 
-      .desktop-menu {
-          padding-right: 3vw;
-          .link {
-              padding: 15px;
-              font-family: "Barlow";
-              color: white;
-              font-weight: 600;
-          }
-          #contact {
-              background-color: #fff;
-              color: black;
-              padding: 10px 20px;
-              border-radius: 20px;;
-              margin-left: 20px;;
-              font-family: "Fraunces";
-          }
+    .desktop-menu {
+        padding-right: 3vw;
+        .link {
+          padding: 15px;
+          font-family: "Barlow";
+          color: white;
+          font-weight: 600;
+        }
+        #contact {
+            background-color: #fff;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 20px;;
+            margin-left: 20px;;
+            font-family: "Fraunces";
+        }
 
-          #contact:hover {
-              background-color: #82cffa;
-              color: white;
-          }
-      }
-  }
+        #contact:hover {
+            background-color: #82cffa;
+            color: white;
+        }
+    }
 
-  #transform {
+    .hamburger {
+        cursor: pointer;
+        margin-top: -5px;
+        .bar {
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3 ease-in-out;
+            transition: all 0.3 ease-in-out;
+            background-color: #fff;
+            color: white;
+        }
+    }
+}
+
+#transform {
       a:hover {
         text-decoration: underline hsl(51, 100%, 49%) solid ;
         text-decoration-thickness: 3px;
     }
-  }
+}
 
-  #standout {
+#standout {
     a:hover {
       text-decoration: underline hsl(7, 99%, 70%) solid ;
       text-decoration-thickness: 3px;
     }
-  }
-  .landing {
-        text-align: center;
-        color: white;
-        font-family: "Fraunces";
-        letter-spacing: 4px;
-        font-size: 4rem;
-        margin-top: 10vh;
-        h1 {
-            padding-bottom: 10vh;
-        }
-  }
+}
+.landing {
+    text-align: center;
+    color: white;
+    font-family: "Fraunces";
+    letter-spacing: 4px;
+    font-size: 4rem;
+    margin-top: 10vh;
+    h1 {
+        padding-bottom: 10vh;
+    }
+}
 
-  footer {
+footer {
     background-color: #9ed1c5;
     color: hsl(168, 34%, 41%);
     text-align: center;
@@ -71,14 +91,11 @@
 
     .social {
         color:#2C7566;
-        fill: white;
     }
     .social:hover {
-            color: white;
-            fill: white;
-        
+        color: white;    
     }
-  }
+}
   
 @media screen and (max-width: 750px) {
     header {
@@ -91,8 +108,29 @@
            display: none;
         }
         .hamburger {
-            margin: 0px 15px;
+            cursor: pointer;
+
+            .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                -webkit-transition: all 0.3 ease-in-out;
+                transition: all 0.3 ease-in-out;
+                color: white;
+            }
         }
+
+        .hamburger.active .bar:nth-child(2){
+            opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active .bar:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
     }
 
     .landing {
@@ -351,7 +389,7 @@
             }
 
             p {
-                margin: 15px 10vw;
+                margin: 15px 5vw;
             }
         }
         .graphic-design {
