@@ -75,6 +75,11 @@ footer .footer-links .footer-link:hover {
   color: white;
 }
 
+footer .social {
+  color: #2C7566;
+  fill: white;
+}
+
 footer .social:hover {
   color: white;
   fill: white;

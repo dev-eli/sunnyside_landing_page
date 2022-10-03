@@ -69,6 +69,10 @@
         }
     }
 
+    .social {
+        color:#2C7566;
+        fill: white;
+    }
     .social:hover {
             color: white;
             fill: white;
@@ -288,7 +292,7 @@
         .info-img-wrapper {
             display: block;
             width: 50vw;
-            height: 310px;;
+            height: 310px;
         }
         #transform-img-wrapper {  
             background: url('images/desktop/image-transform.jpg') no-repeat center/100%;
